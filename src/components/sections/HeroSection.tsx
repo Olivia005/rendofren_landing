@@ -74,10 +74,11 @@ export function HeroSection() {
 
         {/* Action Buttons */}
         <motion.div {...fadeUp(0.3)} className="flex flex-col gap-9 sm:flex-row">
-          <motion.button
+          <motion.a
+            href="https://rendofren.vercel.app"
             whileHover={{ scale: 1.05, boxShadow: "0 0 30px hsla(168, 100%, 48%, 0.4)" }}
             whileTap={{ scale: 0.95 }}
-            className="rounded-full bg-accent px-10 py-4 text-base font-bold text-black shadow-xl transition-all"
+            className="rounded-full bg-accent px-10 py-4 text-base font-bold text-black shadow-xl transition-all inline-block"
           >
             {"Start Render".split("").map((char, i) => (
               <motion.span
@@ -89,7 +90,7 @@ export function HeroSection() {
                 {char}
               </motion.span>
             ))}
-          </motion.button>
+          </motion.a>
           <motion.button
             whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
             whileTap={{ scale: 0.95 }}

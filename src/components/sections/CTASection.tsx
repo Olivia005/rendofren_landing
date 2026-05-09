@@ -45,13 +45,14 @@ export function CTASection() {
         </motion.p>
 
         <motion.div {...fadeUp(0.3)} className="flex flex-col gap-4 sm:flex-row">
-          <motion.button
+          <motion.a
+            href="https://rendofren.vercel.app"
             whileHover={{ scale: 1.05, boxShadow: "0 0 30px hsla(168, 100%, 48%, 0.5)" }}
             whileTap={{ scale: 0.95 }}
-            className="rounded-xl bg-accent px-12 py-5 text-base font-bold text-black shadow-xl transition-all"
+            className="rounded-xl bg-accent px-12 py-5 text-base font-bold text-black shadow-xl transition-all inline-block text-center"
           >
             Launch App
-          </motion.button>
+          </motion.a>
           <motion.button
             whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.05)", borderColor: "rgba(0, 245, 196, 0.4)" }}
             whileTap={{ scale: 0.95 }}

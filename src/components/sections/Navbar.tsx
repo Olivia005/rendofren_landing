@@ -112,7 +112,8 @@ export function Navbar() {
               <Icon className="h-4 w-4 text-white/50 hover:text-white" />
             </motion.button>
           ))}
-          <motion.button
+          <motion.a
+            href="https://rendofren.vercel.app"
             whileHover={{ 
               boxShadow: "0 0 40px hsla(168, 100%, 48%, 0.6)",
               scale: 1.05,
@@ -133,7 +134,7 @@ export function Navbar() {
               }
             }}
             whileTap={{ scale: 0.98 }}
-            className="relative ml-4 hidden overflow-hidden rounded-xl bg-accent px-6 py-2.5 text-sm font-bold text-black transition-all md:block"
+            className="relative ml-4 hidden overflow-hidden rounded-xl bg-accent px-6 py-2.5 text-sm font-bold text-black transition-all md:block inline-block"
           >
             <motion.div
               animate={{
@@ -148,7 +149,7 @@ export function Navbar() {
               className="absolute inset-0 z-0 bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12"
             />
             <span className="relative z-10">Launch App</span>
-          </motion.button>
+          </motion.a>
         </div>
       </motion.div>
     </nav>
